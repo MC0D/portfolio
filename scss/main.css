@@ -47,6 +47,9 @@ p {
   font-size: 3rem;
   color: #5bc0eb;
 }
+.home .wrapper-presentation .presentation p {
+  text-align: justify;
+}
 .home .wrapper-presentation .presentation .home-buttons {
   padding-top: 1rem;
   display: flex;
@@ -60,10 +63,11 @@ p {
   border-radius: 1rem;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 .home .wrapper-presentation .presentation .home-buttons button:hover {
   background-color: #5bc0eb;
+  transform: scale(1.2);
 }
 .home .wrapper-presentation .presentation .reseaux {
   padding-top: 1rem;
@@ -79,6 +83,42 @@ p {
 .home .photo {
   border-radius: 360px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+  display: flex;
+  gap: 5rem;
+}
+.about .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 50%;
+}
+.about .about-me h1 {
+  letter-spacing: 1px;
+  color: #5bc0eb;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.about .about-me p {
+  max-width: 500px;
+  text-align: justify;
+}
+.about .skills {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 50%;
+}
+.about .skills h2 {
+  letter-spacing: 1px;
+  color: #5bc0eb;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 header {
@@ -103,7 +143,7 @@ header .logo a {
   transition: 1s ease;
 }
 header .logo a:hover {
-  scale: 1.5;
+  transform: scale(1.5);
 }
 header .logo a strong {
   color: #5bc0eb;

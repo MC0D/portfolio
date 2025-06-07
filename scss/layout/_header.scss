@@ -20,7 +20,7 @@ header {
       transition: 1s ease;
 
       &:hover {
-        scale: 1.5;
+        transform: scale(1.5);
       }
 
       strong {
