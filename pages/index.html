@@ -15,7 +15,8 @@
   </head>
   <body>
     <header>
-      <a href="./index.html" class="logo">Logo</a>
+      <!-- APPLIQUER UN EFFET POUR METTRE LE TITRE SERCTION EN BLEU QUAND ON EST DESSUS -->
+      <a href="./index.html" class="logo">Mikaël.</a>
       <nav class="navbar">
         <a href="./index.html" class="home">Home</a>
         <a href="./about.html" class="about">About</a>
@@ -26,14 +27,36 @@
     </header>
     <main>
       <section class="home">
-        <h1>Hello, I'm Mikaël Ferreira Da Costa</h1>
-        <p>Full Stack Developer</p>
-        <p>
-          Junior developer with solid foundations, I build modern, user-focused
-          web apps and grow every day through code. I'm curious, autonomous, and
-          always ready to take on new challenges.
-        </p>
-        <img src="../assets/img/photo_profil_svg.svg" alt="Photo de profil" />
+        <div class="wrapper-presentation">
+          <div class="presentation">
+            <h1>Hello, I'm <br /><span>Mikaël Ferreira Da Costa</span></h1>
+            <p class="metier">Full Stack Developer</p>
+            <p>
+              Junior developer with solid foundations, I build modern,
+              user-focused web apps and grow every day through code. I'm
+              curious, autonomous, and always ready to take on new challenges.
+            </p>
+            <div class="home-buttons">
+              <button>About me</button>
+              <button>My projects</button>
+            </div>
+            <div class="reseaux">
+              <a href="">
+                <img src="../assets/img/github_svg.svg" alt="Logo Github" />
+              </a>
+              <a href="">
+                <img src="../assets/img/linkedin_svg.svg" alt="Logo Linkegin" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="../assets/img/photo_svg.svg"
+            alt="Photo de profil"
+            class="photo"
+          />
+        </div>
       </section>
     </main>
   </body>
