@@ -1,6 +1,5 @@
 .about {
   display: flex;
-  gap: 5rem;
 
   .about-me {
     display: flex;
@@ -17,6 +16,13 @@
     p {
       max-width: 500px;
       text-align: justify;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      box-shadow: $box-shadow;
+      padding: 2rem;
+      border-radius: 2rem;
     }
   }
 
@@ -34,8 +40,26 @@
       font-weight: 600;
       font-size: 3rem;
     }
-  }
-}
 
-.about-me {
+    .skills-content {
+      display: flex;
+      gap: 100px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-shadow: $box-shadow;
+      border-radius: 2rem;
+
+      img {
+        max-width: 75px;
+        box-shadow: $box-shadow;
+        border-radius: 1rem;
+        padding: 0.5rem;
+
+        &:hover {
+        }
+      }
+    }
+  }
 }

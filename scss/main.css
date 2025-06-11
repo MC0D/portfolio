@@ -28,7 +28,7 @@ p {
 
 .home {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
 }
 .home .wrapper-presentation {
   display: flex;
@@ -87,7 +87,6 @@ p {
 
 .about {
   display: flex;
-  gap: 5rem;
 }
 .about .about-me {
   display: flex;
@@ -105,6 +104,13 @@ p {
 .about .about-me p {
   max-width: 500px;
   text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  border-radius: 2rem;
 }
 .about .skills {
   width: 50%;
@@ -120,7 +126,22 @@ p {
   font-weight: 600;
   font-size: 3rem;
 }
-
+.about .skills .skills-content {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+}
+.about .skills .skills-content img {
+  max-width: 75px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
 header {
   background-color: #081b29;
   height: 6rem;
