@@ -166,6 +166,39 @@ p {
   transform: scale(1.5);
 }
 
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.portfolio div {
+  display: flex;
+  max-width: 50%;
+  min-height: 45%;
+  max-height: 45%;
+}
+.portfolio div .infos {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+.portfolio div .infos h1,
+.portfolio div .infos h2,
+.portfolio div .infos h3,
+.portfolio div .infos h4,
+.portfolio div .infos .techno {
+  color: #5bc0eb;
+}
+.portfolio img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .services {
   display: flex;
   flex-direction: column;
