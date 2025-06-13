@@ -24,13 +24,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1rem;
+      font-size: 1.2rem;
       box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
       padding: 2rem;
       border-radius: 2rem;
       transition: 1s ease;
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
   }

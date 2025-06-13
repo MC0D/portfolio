@@ -30,7 +30,60 @@
     </header>
     <main>
       <section class="contact">
-        Formulaire de contact / Icone réseaux etc
+        <h1>Let's work together</h1>
+        <p>
+          At the moment, I'm not offering fixed services. However, I'm open to
+          professional opportunities, collaborations, or freelance inquiries.
+          Feel free to get in touch through the form below — I’ll get back to
+          you as soon as possible.
+        </p>
+
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="First name"
+              name="firstname"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              name="lastname"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Email address"
+              name="email"
+              required
+            />
+            <input type="tel" placeholder="Phone number" name="phone" />
+          </div>
+
+          <div class="form-group">
+            <select name="request">
+              <option value="" disabled selected>Select a request</option>
+              <option value="opportunities">Opportunities</option>
+              <option value="collaborations">Collaborations</option>
+              <option value="freelance">Freelance</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="Type your message here."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send message</button>
+        </form>
       </section>
     </main>
   </body>

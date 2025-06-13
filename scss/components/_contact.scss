@@ -1,0 +1,56 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 600px;
+  h1 {
+    color: $secondary-color;
+  }
+
+  p {
+    text-align: justify;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
+    .form-group {
+      max-width: 100%;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+
+      input,
+      select,
+      textarea {
+        padding: 0.5rem;
+        background-color: #1b1f24;
+        border: 1px solid $secondary-color;
+        border-radius: 8px;
+        color: $secondary-color;
+        font-size: 1rem;
+        flex: 1;
+      }
+    }
+    button {
+      padding: 0.5rem;
+      background-color: #1b1f24;
+      border: 1px solid $secondary-color;
+      border-radius: 8px;
+      color: $secondary-color;
+      font-size: 1rem;
+      flex: 1;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 1s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
