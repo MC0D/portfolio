@@ -166,33 +166,42 @@ p {
   transform: scale(1.5);
 }
 
-.portfolio {
+.main-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-portfolio .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  justify-content: space-between;
+  gap: 2rem;
 }
-.portfolio div {
+.main-portfolio .portfolio > div {
   display: flex;
-  max-width: 50%;
-  min-height: 45%;
-  max-height: 45%;
+  width: 48%;
+  min-height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b1f24;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
 }
-.portfolio div .infos {
+.main-portfolio .portfolio > div .infos {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   gap: 1rem;
 }
-.portfolio div .infos h1,
-.portfolio div .infos h2,
-.portfolio div .infos h3,
-.portfolio div .infos h4,
-.portfolio div .infos .techno {
+.main-portfolio .portfolio > div .infos h1,
+.main-portfolio .portfolio > div .infos h2,
+.main-portfolio .portfolio > div .infos h3,
+.main-portfolio .portfolio > div .infos h4,
+.main-portfolio .portfolio > div .infos .techno {
   color: #5bc0eb;
 }
-.portfolio img {
+.main-portfolio .portfolio img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
@@ -289,6 +298,7 @@ header {
   font-size: 1rem;
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 header .logo {
   width: 50%;
@@ -340,5 +350,7 @@ body {
   background-color: #081b29;
   display: flex;
   flex-direction: column;
+}
+body:not(.body-portfolio) {
   height: 100vh;
 }/*# sourceMappingURL=main.css.map */
