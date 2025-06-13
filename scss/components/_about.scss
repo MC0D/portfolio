@@ -1,5 +1,6 @@
 .about {
   display: flex;
+  gap: 3rem;
 
   .about-me {
     display: flex;
@@ -12,17 +13,25 @@
       color: $secondary-color;
       font-weight: 600;
       font-size: 3rem;
+      border: 1px solid;
+      padding: 5px 20px;
+      border-radius: 1rem;
     }
     p {
       max-width: 500px;
+      max-height: 450px;
       text-align: justify;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
       box-shadow: $box-shadow;
       padding: 2rem;
       border-radius: 2rem;
+      transition: 1s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -39,25 +48,33 @@
       color: $secondary-color;
       font-weight: 600;
       font-size: 3rem;
+      border: 1px solid;
+      padding: 5px 20px;
+      border-radius: 1rem;
     }
 
     .skills-content {
       display: flex;
-      gap: 100px;
+      gap: 80px;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       padding: 2rem;
       box-shadow: $box-shadow;
       border-radius: 2rem;
+      max-width: 500px;
+      max-height: 450px;
 
       img {
         max-width: 75px;
         box-shadow: $box-shadow;
         border-radius: 1rem;
-        padding: 0.5rem;
+        padding: 1rem;
+        background-color: white;
+        transition: 1s ease;
 
         &:hover {
+          transform: scale(1.5);
         }
       }
     }

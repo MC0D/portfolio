@@ -87,6 +87,7 @@ p {
 
 .about {
   display: flex;
+  gap: 3rem;
 }
 .about .about-me {
   display: flex;
@@ -100,17 +101,25 @@ p {
   color: #5bc0eb;
   font-weight: 600;
   font-size: 3rem;
+  border: 1px solid;
+  padding: 5px 20px;
+  border-radius: 1rem;
 }
 .about .about-me p {
   max-width: 500px;
+  max-height: 450px;
   text-align: justify;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   padding: 2rem;
   border-radius: 2rem;
+  transition: 1s ease;
+}
+.about .about-me p:hover {
+  transform: scale(1.2);
 }
 .about .skills {
   width: 50%;
@@ -125,23 +134,34 @@ p {
   color: #5bc0eb;
   font-weight: 600;
   font-size: 3rem;
+  border: 1px solid;
+  padding: 5px 20px;
+  border-radius: 1rem;
 }
 .about .skills .skills-content {
   display: flex;
-  gap: 100px;
+  gap: 80px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 2rem;
+  max-width: 500px;
+  max-height: 450px;
 }
 .about .skills .skills-content img {
   max-width: 75px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  transition: 1s ease;
 }
+.about .skills .skills-content img:hover {
+  transform: scale(1.5);
+}
+
 header {
   background-color: #081b29;
   height: 6rem;
