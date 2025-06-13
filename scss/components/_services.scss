@@ -1,0 +1,28 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  h1 {
+    font-size: 3rem;
+    border: 2px solid $secondary-color;
+    border-radius: 1rem;
+    padding: 5px 20px;
+    margin-top: 5rem;
+  }
+
+  a {
+    margin: auto;
+
+    p {
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
+      padding: 2rem;
+      border-radius: 2rem;
+      transition: 1s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

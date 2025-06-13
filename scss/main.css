@@ -87,7 +87,7 @@ p {
 
 .about {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
 }
 .about .about-me {
   display: flex;
@@ -97,11 +97,11 @@ p {
   width: 50%;
 }
 .about .about-me h1 {
+  color: white;
   letter-spacing: 1px;
-  color: #5bc0eb;
   font-weight: 600;
   font-size: 3rem;
-  border: 1px solid;
+  border: 2px solid #5bc0eb;
   padding: 5px 20px;
   border-radius: 1rem;
 }
@@ -113,7 +113,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
   padding: 2rem;
   border-radius: 2rem;
   transition: 1s ease;
@@ -131,10 +131,10 @@ p {
 }
 .about .skills h2 {
   letter-spacing: 1px;
-  color: #5bc0eb;
+  color: white;
   font-weight: 600;
   font-size: 3rem;
-  border: 1px solid;
+  border: 2px solid #5bc0eb;
   padding: 5px 20px;
   border-radius: 1rem;
 }
@@ -145,10 +145,14 @@ p {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
   border-radius: 2rem;
   max-width: 500px;
   max-height: 450px;
+  transition: 1s ease;
+}
+.about .skills .skills-content:hover {
+  transform: scale(1.1);
 }
 .about .skills .skills-content img {
   max-width: 75px;
@@ -160,6 +164,33 @@ p {
 }
 .about .skills .skills-content img:hover {
   transform: scale(1.5);
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.services h1 {
+  font-size: 3rem;
+  border: 2px solid #5bc0eb;
+  border-radius: 1rem;
+  padding: 5px 20px;
+  margin-top: 5rem;
+}
+.services a {
+  margin: auto;
+}
+.services a p {
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: 1s ease;
+}
+.services a p:hover {
+  transform: scale(1.2);
 }
 
 header {
