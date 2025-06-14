@@ -249,35 +249,38 @@ p {
   transform: scale(1.3);
 }
 
-.contact {
+.section-contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   max-width: 600px;
+  box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
 }
-.contact h1 {
+.section-contact h1 {
   color: #5bc0eb;
 }
-.contact p {
+.section-contact p {
   text-align: justify;
 }
-.contact form {
+.section-contact form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
 }
-.contact form .form-group {
+.section-contact form .form-group {
   max-width: 100%;
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
-.contact form .form-group input,
-.contact form .form-group select,
-.contact form .form-group textarea {
+.section-contact form .form-group input,
+.section-contact form .form-group select,
+.section-contact form .form-group textarea {
   padding: 0.5rem;
   background-color: #1b1f24;
   border: 1px solid #5bc0eb;
@@ -286,7 +289,7 @@ p {
   font-size: 1rem;
   flex: 1;
 }
-.contact form button {
+.section-contact form button {
   padding: 0.5rem;
   background-color: #1b1f24;
   border: 1px solid #5bc0eb;
@@ -298,10 +301,10 @@ p {
   font-weight: 600;
   transition: 1s ease;
 }
-.contact form button:hover {
+.section-contact form button:hover {
   transform: scale(1.1);
 }
-.contact form .form-message {
+.section-contact form .form-message {
   margin-top: 1rem;
   font-weight: 500;
   font-size: 1rem;
