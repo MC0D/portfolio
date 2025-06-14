@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="./script.js" defer></script>
 
     <title>Developpeur Web Portfolio</title>
   </head>
@@ -38,7 +39,11 @@
           you as soon as possible.
         </p>
 
-        <form action="https://formspree.io/f/mqabbkoo" method="POST">
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mqabbkoo"
+          method="POST"
+        >
           <div class="form-group">
             <input
               type="text"
@@ -83,6 +88,7 @@
           </div>
 
           <button type="submit">Send message</button>
+          <div id="form-message" class="form-message"></div>
         </form>
       </section>
     </main>

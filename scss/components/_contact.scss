@@ -52,5 +52,11 @@
         transform: scale(1.1);
       }
     }
+    .form-message {
+      margin-top: 1rem;
+      font-weight: 500;
+      font-size: 1rem;
+      color: $secondary-color;
+    }
   }
 }

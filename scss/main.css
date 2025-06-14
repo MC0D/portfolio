@@ -301,6 +301,12 @@ p {
 .contact form button:hover {
   transform: scale(1.1);
 }
+.contact form .form-message {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #5bc0eb;
+}
 
 header {
   background-color: #081b29;
