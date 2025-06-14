@@ -2,7 +2,7 @@ body {
   background-color: $primary-color;
   display: flex;
   flex-direction: column;
-  &:not(.body-portfolio) {
+  &:not(.body-portfolio, .body-contact) {
     height: 100vh;
   }
 }

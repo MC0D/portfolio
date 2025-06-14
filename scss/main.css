@@ -258,6 +258,7 @@ p {
   box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
   border-radius: 1rem;
   padding: 2rem;
+  margin: 2rem 0rem;
 }
 .contact h1 {
   color: #5bc0eb;
@@ -420,7 +421,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-body:not(.body-portfolio) {
+body:not(.body-portfolio, .body-contact) {
   height: 100vh;
 }
 
@@ -505,10 +506,12 @@ body:not(.body-portfolio) {
     flex-direction: column;
     text-align: center;
     margin: 0;
+    transform: none;
   }
   .main-portfolio .portfolio img {
     max-width: 100%;
     height: auto;
+    transform: none;
   }
   .services h1 {
     font-size: 2rem;
@@ -534,5 +537,25 @@ body:not(.body-portfolio) {
   p {
     font-size: 1rem;
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .main-portfolio .portfolio {
+    padding: 3rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .main-portfolio .portfolio > div {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    transform: none;
+  }
+  .main-portfolio .portfolio img {
+    max-width: 100%;
+    height: auto;
+    transform: none;
   }
 }/*# sourceMappingURL=main.css.map */
