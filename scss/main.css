@@ -179,14 +179,14 @@ p {
 }
 .main-portfolio .portfolio > div {
   display: flex;
-  width: 48%;
-  min-height: 100%;
+  width: 45%;
   align-items: center;
   justify-content: space-between;
   background-color: #1b1f24;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
+  margin: 3rem 2rem 3rem 2rem;
 }
 .main-portfolio .portfolio > div .infos {
   display: flex;
@@ -206,8 +206,22 @@ p {
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: 1s ease;
+}
+.main-portfolio .portfolio img:hover {
+  transform: scale(1.5);
+  border: 1px solid #5bc0eb;
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio > div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .portfolio > div img {
+    max-width: 100%;
+  }
+}
 .services {
   display: flex;
   flex-direction: column;
