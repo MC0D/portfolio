@@ -63,15 +63,20 @@
   .about {
     flex-direction: column;
     padding: 2rem 1rem;
+    max-height: none;
+    flex-wrap: wrap;
 
     .about-me,
     .skills {
       width: 100%;
+      max-height: none;
+      gap: none;
     }
 
     .about-me {
       p {
         max-width: 100%;
+        max-height: none;
       }
     }
 
