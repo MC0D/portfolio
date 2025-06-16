@@ -148,7 +148,7 @@ p {
   box-shadow: 0 4px 10px rgba(91, 192, 235, 0.25);
   border-radius: 2rem;
   max-width: 500px;
-  max-height: 450px;
+  min-height: 470px;
   transition: 1s ease;
 }
 .about .skills .skills-content:hover {
