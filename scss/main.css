@@ -107,9 +107,10 @@ p {
 }
 .about .about-me p {
   max-width: 500px;
-  max-height: 450px;
+  /*       max-height: 450px; */
   text-align: justify;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -492,8 +493,7 @@ body:not(.body-portfolio, .body-contact) {
   .about .about-me p {
     max-width: 100%;
     max-height: none;
-    -o-object-fit: cover;
-       object-fit: cover;
+    flex-direction: column;
   }
   .about .skills .skills-content {
     max-width: 100%;
